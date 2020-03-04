@@ -76,5 +76,3 @@ Route::post('invoice','FrontendController@invoice');
 Route::get('po','FrontendController@saveBooking')->name('po');
 Route::post('contact','mailcontroller@tosend')->name('contact');
 Route::get('user/email_verified_at/{token}','Auth\RegisterController@verfiy');
-
-Route::get('blogs','HomeController@in');
