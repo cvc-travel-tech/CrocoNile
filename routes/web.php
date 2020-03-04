@@ -29,7 +29,7 @@ Route::get('/tour-details', 'FrontendController@tour_details');
 Route::get('/blog-inner', 'FrontendController@blog_inner');
 Route::get('/my_profile/{id}', 'FrontendController@my_profile');
 Route::get('/input', 'FrontendController@khartoshaa');
-Route::get('/contact', 'FrontendController@travelforfree');
+//Route::get('/contact', 'FrontendController@travelforfree');
 Route::get('/optional/{id}', 'FrontendController@optional');
 Route::get('/index', 'FrontendController@contactt');
 //Route::get('/travel-free', 'FrontendController@travel_free');

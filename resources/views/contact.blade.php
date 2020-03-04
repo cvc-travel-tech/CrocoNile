@@ -11,10 +11,61 @@
     <section>
         <div class="tr-register">
             <div class="tr-regi-form v2-search-form">
+
+
+
+            @if($errors->any())
+
+<div class="alert alert-danger">
+
+	@foreach($errors->all() as $error)
+
+<li>
+
+	{{$error}}
+
+</li>
+
+@endforeach
+
+</div>
+
+
+
+@endif
+
+@if(session('success'))
+
+<div class="text-center alert alert-success">
+
+	{{session('success')}}
+
+</div>
+
+
+
+@endif
+
+@if(session('error'))
+
+<div class="text-center alert alert-danger">
+
+	{{session('error')}}
+
+</div>	
+
+
+
+@endif
+
+
+
+
                 <h1>Contact Us</h1>
                 <p>It's free and always will be.</p>
-                <form class="contact__form" method="post"
-                    action="http://rn53themes.net/themes/demo/travelz/mail/tourbooking.php">
+                <form class="contact__form"  method="post" action="{{Route('contact')}}" >
+
+                <input type="hidden" name="_token"  value="{{ csrf_token() }}">
                     <div class="alert alert-success contact__msg" style="display: none" role="alert">
                         Thank you for arranging a wonderful trip for us! Our team will contact you shortly!
                     </div>
@@ -24,7 +75,7 @@
                         <div class="row">
                             <div class="input-field col s6 contact-input">
 
-                                <input type="text" class="validate" name="text" required>
+                                <input type="text" class="validate" name="name" required>
                                 <label>Enter your Name</label>
 
                                 <div class="input-field ">
@@ -36,7 +87,7 @@
                                     <label>Enter your email</label>
                                 </div>
                                 <div class="text-area">
-                                    <textarea rows="4" cols="50">
+                                    <textarea name="body" rows="4" cols="50">
 
                                                 </textarea>
 

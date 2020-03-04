@@ -11,6 +11,8 @@ class mailcontroller extends Controller
 
   public function tosend(Request $request )
     {
+
+
         
             $request->validate([
             'name'=>'required',
@@ -21,7 +23,7 @@ class mailcontroller extends Controller
        $body=$request->input('body');
  
 mail::to("info@cvc.vacations")->send(new contact($name,$Email,$body));
-return redirect('contact');
+return redirect('contact')->with('success', 'Your request has been sent successfully.');
     }
     
 }

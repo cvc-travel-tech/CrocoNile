@@ -5,11 +5,11 @@
 </head>
 <body>
 
-<h1>this massage form contact us form our web site</h1>
-<h3>sender :Eamil {{$Email}}</h3>
-<h3>sender :name   {{$name}}</h3>
+<h1>This massage form contact us form Croconile(WebSite)</h1>
+<h3>Sender :Eamil {{$Email}}</h3>
+<h3>Sender :name   {{$name}}</h3>
 
-<h3>massage :{{$body}}</h3>
+<h3>Massage :{{$body}}</h3>
 
 </body>
 </html>
