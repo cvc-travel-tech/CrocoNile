@@ -58,7 +58,7 @@
                                 <ul class="one-columns">
                                     <li> <a href="{{url('about')}}">About Us</a> </li>
                                    <li><a href="{{url('family-package')}}">Packages</a> </li>
-                                    <li> <a href="{{url('blog')}}">Blog </a> </li>
+                                    {{-- <li> <a href="{{url('blog')}}">Blog </a> </li> --}}
                                     <li> <a href="contact.html">Contact Us</a> </li>
                                     <li><a href="{{url('input')}}">Khartousha</a> </li>
                                     
