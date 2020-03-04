@@ -50,7 +50,7 @@
                             <div class="col-sm-3 foot-spec foot-com">
                                 <h5><span>Address & Contact Info</span></h5>
                                 <p>11 Aladeeb Adham Ali , Sheraton, Cairo, Egypt</p>
-                                <h6> <span class="strong">Phone: </span> + 02 22682428 </h6>
+                                <h6> <span class="strong">USA/CANADA TOLL FREE: </span>  1(866)822-2438 </h6>
                                 <h6> <span class="strong">Email: </span> info@croconile.travel </h6>
                             </div>
                             <div class="col-sm-3 col-md-3 foot-spec foot-com">
@@ -72,26 +72,26 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        <a href="#"> <img src="{{ asset ('croconile/images/facebook.png')}}" height="32px" width="32px" alt="">
+                                        <a href="https://www.facebook.com/croconile.travel/"> <img src="{{ asset ('croconile/images/facebook.png')}}" height="32px" width="32px" alt="">
                                     </li>
                                     </a>
 
-                                    <li>
+                                    <!-- <li>
                                         <a href="#"><img src="{{ asset ('croconile/images/instagram.png')}}" height="32px" width="32px"
                                                 alt=""></a>
-                                    </li>
+                                    </li> -->
                                     <li>
-                                        <a href="#"><img src="{{ asset('croconile/images/whatsapp.png')}}" height="32px" width="32px"
+                                        <a href="https://api.whatsapp.com/send?phone=00201221232504"><img src="{{ asset('croconile/images/whatsapp.png')}}" height="32px" width="32px"
                                                 alt=""></a>
                                     </li>
-                                    <li>
-                                        <a href="#"><img src="{{ asset('croconile/images/you')}}" height="32px" width="32px" alt=""></a>
+                                    <!-- <li>
+                                        <a href="https://www.youtube.com/channel/UCXwS5_HeNlCk2bssNb0bgEg"><img src="{{ asset('croconile/images/you')}}" height="32px" width="32px" alt=""></a>
 
 
-                                    </li>
-                                    <a href="#" class="twit"><img src="{{ asset('croconile/images/twitter.png')}}" height="32px" width="32px"
-                                            alt=""></a>
-                                            <a href="#" class="twit"><img src="{{ asset('croconile/images/you.png')}}" height="32px" width="32px"
+                                    </li> -->
+                                     <!-- <a href="" class="twit"><img src="{{ asset('croconile/images/twitter.png')}}" height="32px" width="32px"
+                                            alt=""></a>  -->
+                                            <a href="https://www.youtube.com/channel/UCXwS5_HeNlCk2bssNb0bgEg" class="twit"><img src="{{ asset('croconile/images/you.png')}}" height="32px" width="32px"
                                             alt=""></a>
                                 </ul>
 
@@ -117,11 +117,10 @@
     <div class="icon-float hidden-phone">
         <ul>
             <li><a href="#" class="sh">1k <br> Share</a> </li>
-            <li><a href="#" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-            <li><a href="#" class="gp1"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
-            <li><a href="#" class="tw1"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-            <li><a href="#" class="li1"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-            <li><a href="#" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.facebook.com/croconile.travel/" class="fb1"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.youtube.com/channel/UCXwS5_HeNlCk2bssNb0bgEg" class="gp1"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+            
+            <li><a href="https://api.whatsapp.com/send?phone=00201221232504" class="wa1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
             <li><a href="#" class="sh1"><i class="fa fa-envelope-o" aria-hidden="true"></i></a> </li>
             
             

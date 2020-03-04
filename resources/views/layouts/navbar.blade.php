@@ -91,7 +91,7 @@
                             <ul>
                                 <li><a href="#">11 Aladeeb Adham Ali , Sheraton, Cairo, Egypt</a>
                                 </li>
-                                <li><a href="#">Phone: +02 012 21 23 25 04</a>
+                                <li><a href="#">USA/CANADA TOLL FREE: 1(866)822-2438</a>
                                 </li>
                             </ul>
                         </div>
