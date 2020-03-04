@@ -2,7 +2,7 @@
 <style>
 .tourz-hom-ser {
     /* margin-left:97px; */
-} 
+}
 .tourz-hom-ser ul li a{
     margin: 1px 0px 0px -106px;
 }
@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="tourz-search-1">
 
-                    <h1><span>Explore</span> <span id="type-text"></span> </h1>
+                    <h1><span>Explo</span> <span id="type-text"></span> </h1>
                     <p>Experience our exclusive vacation packages, ensure affordable deals, book your accommodation,
                         discover top events and more…</p>
                 </div>
@@ -34,7 +34,7 @@
 <div class="container">
 <div class=" tourz-hom-ser" style="margin-left: 97px;">
 
-    
+
 
              <ul>
 
@@ -51,7 +51,7 @@
                     </a>
                 </li>
 
-                
+
 
                         @endforeach
 
@@ -59,13 +59,13 @@
 
 
 
-           
-             
-              
-                
-            </ul> 
-            
-            
+
+
+
+
+            </ul>
+
+
 
 
 
@@ -157,9 +157,9 @@
 
 
 @endforeach
-                        
 
-                               
+
+
 
 
                             </tbody>
