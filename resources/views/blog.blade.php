@@ -31,62 +31,35 @@
                 </div>
                 <!--===== POSTS ======-->
                 <div class="rows">
+
+
+
+
+
+                 @foreach($blogs as $blog)
+
                     <div class="posts">
-                        <div class="col-md-6 col-sm-6 col-xs-12"> <img src="{{ asset('croconile/images/hatshepsuttemple.jpg')}}" />
+                        <div class="col-md-6 col-sm-6 col-xs-12"> 
+                            <img src="{{ asset('storage/tmp/uploads/'.\App\Images::find($blog['innerImage'])->file_path) }}" />
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <h3>Solar Alignment on Hatshepsut's Temple</h3>
-                            <h5><span class="post_author">Author: Johnson</span><span class="post_date">Date: 12th
-                                    May,2016</span><span class="post_city">City: Illunois</span></h5>
-                            <p>On the 6th of January 2020, a lot of people gathered in front of Queen Hatshepsut's temple ,at El Dier Elbahary in Luxor's west bank, to witness the sun aligning on the sanctuary of the temple. This fascinating phenomenon indicates
-                                the intelligence of Ancient Egyptians architectural and astronomical knowledge. It can help us deeply understand their beliefs; in addition it is an excellent example of the environmental-friendly constructions depending
-                                on its aligning with sun rays. Furthermore, the event contributes in reviving tourism in the area and educating crowds of people about the glorious ancient civilization. It is understood that Ancient Egyptians celebrated
-                                two major festivals every year; the first of goddess Hathour, goddess of motherhood and love, on the 6th of January. The second is god Horus's, the sky god, on the 9th of December. This is why Ancient Egyptians architects
-                                aligned most of their temples and shrines to line up with such important religious occasions. Worthwhile, the funerary temple of Queen Hatshepsut is considered one of the most beautiful buildings in Egypt. It owns a dramatic
-                                location where the temple is beautifully blended with the cliffs from which it was partially cut. It was designed by the courtier Senenmut who is said to be Hatshepsut's lover as well.
-                            </p>
-                            <a href="{{url('blog-inner')}}" class="link-btn">Read more</a>
+                            <h3>{{ $blog['title'] }}</h3>
+                            <!-- <h5><span class="post_author">Author: Johnson</span><span class="post_date">Date: 12th
+                                    May,2016</span><span class="post_city">City: Illunois</span></h5> -->
+                            {!! $blog['description'] !!}
+                            <a href="{{ url('blog_details/'. $blog['id'] ) }}" class="link-btn">Read more</a>
                         </div>
                     </div>
-                    <div class="posts">
-                        <div class="col-md-6 col-sm-6 col-xs-12"> <img src="{{ asset('croconile/images/AnaKato-1.jpg')}}" alt="" /> </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <h3>We are Offering the hottest offers</h3>
-                            <h5><span class="post_author">Author: Johnson</span><span class="post_date">Date: 12th
-                                    May,2016</span><span class="post_city">City: Illunois</span></h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                            </p>
-                            <p>Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p> <a href="{{url('blog-inner')}}"
-                                class="link-btn">Read more</a>
-                        </div>
-                    </div>
-                    <div class="posts">
-                        <div class="col-md-6 col-sm-6 col-xs-12"> <img src="{{ asset('croconile/images/AnaKato-1.jpg')}}" alt="" /> </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <h3>Lorem ipsum dummy content</h3>
-                            <h5><span class="post_author">Author: Johnson</span><span class="post_date">Date: 12th
-                                    May,2016</span><span class="post_city">City: Illunois</span></h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                            </p>
-                            <p>Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p> <a href="{{url('blog-inner')}}"
-                                class="link-btn">Read more</a>
-                        </div>
-                    </div>
-                    <div class="posts">
-                        <div class="col-md-6 col-sm-6 col-xs-12"> <img src="{{ asset('croconile/images/AnaKato-1.jpg')}}" alt="" /> </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <h3>Lorem ipsum dummy content</h3>
-                            <h5><span class="post_author">Author: Johnson</span><span class="post_date">Date: 12th
-                                    May,2016</span><span class="post_city">City: Illunois</span></h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.There are many variations of passages of Lorem
-                                Ipsum available, but the majority have suffered alteration in some form, by injected humour
-                            </p>
-                            <p>Randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p> <a href="{{url('blog-inner')}}"
-                                class="link-btn">Read more</a>
-                        </div>
-                    </div>
+
+@endforeach
+
+                    
+
+
+           
+
+
+
                 </div>
                 <!--===== POST END ======-->
             </div>
