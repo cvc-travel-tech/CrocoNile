@@ -398,6 +398,7 @@ public function optional()
     {
 
         $package = $this->Package->findOrFail($slug);
+        $id=$package->id;
         $packages = Package::latest()->limit(2)->get();
 
         $package['package_images'] = Images::whereIn('id', $package->images)->get();
@@ -409,7 +410,7 @@ public function optional()
 
      $package_price =PackagePrice::where('package_id',$package->id)->first();
 
-        return view('tour-details', compact('package','apckage','package_price','packages'));
+        return view('tour-details', compact('package','apckage','package_price','packages','id'));
     }
 
 

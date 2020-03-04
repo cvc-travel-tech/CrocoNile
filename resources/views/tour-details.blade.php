@@ -211,11 +211,15 @@ tr:nth-child(even) {
       </div>
                         <!-- start table date -->
 
+
+
+
+                        
                         <div class="tab-pane fade" id="dates" role="tabpanel" aria-labelledby="dates-tab">
                             <div class="dates">
                                 <div class="container">
                                     <div class="col-sm-4">
-
+@if($id == 49)
                                         <h4  >2020 Dates & price Dimond</h4>
                                        <div class="row">
   <button type="button" class="btn btn-info dates" data-toggle="collapse" data-target="#demo">January<i style="margin-left:135px;" class="fa fa-angle-down" aria-hidden="true"></i>
@@ -1133,10 +1137,27 @@ tr:nth-child(even) {
                                             </table>
   </div>
   </div> 
+    @elseif($id == 46)
 
-                                    </div>
+  46
+
+    @elseif($id == 47)
+
+  47
+  
+  
+  
+  @elseif($id == 48)
+
+  48
+@endif
+
+                          </div>
                                 </div>
                             </div>
+
+                            
+
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
@@ -1145,6 +1166,7 @@ tr:nth-child(even) {
                    
                        
 
+          
 
 
                     <div>
