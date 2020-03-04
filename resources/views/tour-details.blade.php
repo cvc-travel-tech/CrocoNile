@@ -76,11 +76,11 @@ tr:nth-child(even) {
                         <div id="myCarousel1" class="carousel slide" data-ride="carousel">
 
                             <ol class="carousel-indicators carousel-indicators-1">
-                            
-                               
 
 
-                                
+
+
+
                                 @foreach($package['package_images'] as $key => $value)
 
 
@@ -144,16 +144,6 @@ tr:nth-child(even) {
         >
                             </li>
 
-
- 
-      
-
-
-
-
-
-
-
                             <li class="nav-item">
                                 <a class="nav-link" id="dates-tab" data-toggle="tab" href="#dates" role="tab" aria-controls="dates" aria-selected="false">Dates</a>
                             </li>
@@ -163,19 +153,19 @@ tr:nth-child(even) {
                         </ul>
                     </div>
                     <div class="tab-content" id="myTabContent">
-                        
-        
+
+
                         <div class="tab-pane fade  active in" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="overview">
  {!! $package->overview !!}
-</div>   
+</div>
                 </div>
-                
+
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="content-itenarry">
                                             {!! $package->itinerary !!}
 
-                               
+
                             </div>
                         </div>
 
@@ -199,7 +189,7 @@ tr:nth-child(even) {
 
                             </div>
                         </div>
-                        
+
 
                                          <div
         class="tab-pane fade"
@@ -214,89 +204,15 @@ tr:nth-child(even) {
 
 
 
-                        
+
                         <div class="tab-pane fade" id="dates" role="tabpanel" aria-labelledby="dates-tab">
                             <div class="dates">
                                 <div class="container">
                                     <div class="col-sm-4">
 @if($id == 49)
                                         <h4  >2020 Dates & price Dimond</h4>
-                                       <div class="row">
-  <button type="button" class="btn btn-info dates" data-toggle="collapse" data-target="#demo">January<i style="margin-left:135px;" class="fa fa-angle-down" aria-hidden="true"></i>
-</button>
-  <div id="demo" class="collapse">
-     <table class="table table-striped table-condensed dates-tabel">
-                                                <thead>
 
-                                                    <tr>
-                                                        <th>Dates</th>
-                                                        <th>Land Only</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="{{url('booking/'.$package->id . '/'.'25-3-2020')}}"> Jan 1</a> <span> (Sold Out)</span></td>
-                                                        <td>$ 655</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 8</a></td>
-                                                        <td>$ 655</td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 15</a></td>
-                                                        <td>$ 655</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 22</a></td>
-                                                        <td>$ 655</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 29</a></td>
-                                                        <td>$ 655</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-  </div>
-  </div> 
-   <div class="row">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">february</button>
-  <div id="demo1" class="collapse">
-     <table class="table table-striped table-condensed dates-tabel">
-                                                <thead>
-
-                                                    <tr>
-                                                        <th>Dates</th>
-                                                        <th>Land Only</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="#"> Feb 5</a> <span> (Sold Out)</span></td>
-                                                        <td>$ 655*</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Feb 12</a></td>
-                                                        <td>$ 655</td>
-
-                                                    </tr>
-                                                  
-                                                    <tr>
-                                                        <td><a href="#"> Feb 19</a></td>
-                                                        <td>$ 655</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Feb 26</a></td>
-                                                        <td>$ 655</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-  </div>
-  </div> 
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">March</button>
   <div id="demo3" class="collapse">
@@ -309,29 +225,17 @@ tr:nth-child(even) {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td><a href="#"> Mar 4</a> <span> (Sold Out)</span></td>
-                                                        <td>$ 655*</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Mar 11</a></td>
-                                                        <td>$ 655</td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Mar 18</a></td>
-                                                        <td>$ 655</td>
-                                                    </tr>
                                                     <tr>
                                                         <td><a href="#"> Mar 25</a></td>
                                                         <td>$ 655</td>
 
                                                     </tr>
-                                                    
+
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo4">April</button>
   <div id="demo4" class="collapse">
@@ -370,7 +274,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo5">May</button>
   <div id="demo5" class="collapse">
@@ -401,11 +305,11 @@ tr:nth-child(even) {
                                                         <td>$ 655</td>
 
                                                     </tr>
-                                                   
+
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo6">June</button>
   <div id="demo6" class="collapse">
@@ -436,11 +340,11 @@ tr:nth-child(even) {
                                                         <td>$ 655</td>
 
                                                     </tr>
-                                                    
+
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo7">July</button>
   <div id="demo7" class="collapse">
@@ -479,7 +383,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo8">August</button>
   <div id="demo8" class="collapse">
@@ -510,11 +414,11 @@ tr:nth-child(even) {
                                                         <td>$ 655</td>
 
                                                     </tr>
-                                                  
+
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo9">September</button>
   <div id="demo9" class="collapse">
@@ -553,7 +457,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo10">October</button>
   <div id="demo10" class="collapse">
@@ -584,11 +488,11 @@ tr:nth-child(even) {
                                                         <td>$ 655</td>
 
                                                     </tr>
-                                                   
+
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo11">November</button>
   <div id="demo11" class="collapse">
@@ -619,11 +523,11 @@ tr:nth-child(even) {
                                                         <td>$ 655</td>
 
                                                     </tr>
-                                                   
+
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo12">December</button>
   <div id="demo12" class="collapse">
@@ -662,91 +566,15 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
 
 
                                     </div>
                                     <div class="col-sm-4">
 
                                         <h4>2020 Dates & price Gold</h4>
-                                         <div class="row">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">January</button>
-  <div id="demo2" class="collapse">
-     <table class="table table-striped table-condensed dates-tabel">
-                                                <thead>
 
-                                                    <tr>
-                                                        <th>Dates</th>
-                                                        <th>Land Only</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a> <span> (Sold Out)</span></td>
-                                                        <td>$2289*</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-  </div>
-  </div> 
-   <div class="row">
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo13">February</button>
-  <div id="demo13" class="collapse">
-     <table class="table table-striped table-condensed dates-tabel">
-                                                <thead>
-
-                                                    <tr>
-                                                        <th>Dates</th>
-                                                        <th>Land Only</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a> <span> (Sold Out)</span></td>
-                                                        <td>$2289*</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-  </div>
-  </div> 
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo14">March</button>
   <div id="demo14" class="collapse">
@@ -759,24 +587,7 @@ tr:nth-child(even) {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a> <span> (Sold Out)</span></td>
-                                                        <td>$2289*</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
 
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td><a href="#"> Jan 25</a></td>
-                                                        <td>$2000</td>
-
-                                                    </tr>
                                                     <tr>
                                                         <td><a href="#"> Jan 25</a></td>
                                                         <td>$2000</td>
@@ -785,7 +596,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo15">April</button>
   <div id="demo15" class="collapse">
@@ -824,7 +635,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo16">May</button>
   <div id="demo16" class="collapse">
@@ -863,7 +674,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo17">June</button>
   <div id="demo17" class="collapse">
@@ -902,7 +713,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo18">July</button>
   <div id="demo18" class="collapse">
@@ -941,7 +752,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo19">August</button>
   <div id="demo19" class="collapse">
@@ -980,7 +791,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo20">September</button>
   <div id="demo20" class="collapse">
@@ -1019,7 +830,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo21">October</button>
   <div id="demo21" class="collapse">
@@ -1058,7 +869,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo22">November</button>
   <div id="demo22" class="collapse">
@@ -1097,7 +908,7 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
    <div class="row">
   <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo23">December</button>
   <div id="demo23" class="collapse">
@@ -1136,39 +947,2256 @@ tr:nth-child(even) {
                                                 </tbody>
                                             </table>
   </div>
-  </div> 
+  </div>
     @elseif($id == 46)
+     <div class="container">
+         <div class="row">
+      <div class="col-sm-4">
+  <h4  >2020 Dates & price Dimond</h4>
 
-  46
 
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo30">March</button>
+  <div id="demo30" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td><a href="#"> Mar 25</a></td>
+                                                        <td>$
+1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo31">April</button>
+  <div id="demo31" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 1778</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 1778</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo32">May</button>
+  <div id="demo32" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> May 6</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 13</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 20</a></td>
+                                                        <td>$ 1270</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 27</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo33">June</button>
+  <div id="demo33" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 1270</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo34">July</button>
+  <div id="demo34" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 1270</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo35">August</button>
+  <div id="demo35" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 1270</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo36">September</button>
+  <div id="demo36" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 1270</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo37">October</button>
+  <div id="demo37" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 1270</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo38">November</button>
+  <div id="demo38" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo39">December</button>
+  <div id="demo39" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 1270*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 1270</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 1778</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 1778</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+      </div>
+
+  <div class="col-sm-4">
+
+                                        <h4>2020 Dates & price Gold</h4>
+
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo40">March</button>
+  <div id="demo40" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td><a href="#"> Jan 25</a></td>
+                                                        <td>$2000</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo41">April</button>
+  <div id="demo41" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo42">May</button>
+  <div id="demo42" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo43">June</button>
+  <div id="demo43" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo44">July</button>
+  <div id="demo44" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo45">August</button>
+  <div id="demo45" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo46">September</button>
+  <div id="demo46" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo47">October</button>
+  <div id="demo47" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo48">November</button>
+  <div id="demo48" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo49">December</button>
+  <div id="demo49" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+
+
+</div>
+     </div>
+                                    </div>
     @elseif($id == 47)
 
-  47
-  
-  
-  
+    <div class="container">
+         <div class="row">
+      <div class="col-sm-4">
+  <h4  >2020 Dates & price Dimond</h4>
+
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo50">March</button>
+  <div id="demo50" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td><a href="#"> Mar 25</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo51">April</button>
+  <div id="demo51" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo52">May</button>
+  <div id="demo52" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> May 6</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 13</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 20</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 27</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo53">June</button>
+  <div id="demo53" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo54">July</button>
+  <div id="demo54" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo55">August</button>
+  <div id="demo55" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo56">September</button>
+  <div id="demo56" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo57">October</button>
+  <div id="demo57" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo58">November</button>
+  <div id="demo58" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo59">December</button>
+  <div id="demo59" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+      </div>
+
+  <div class="col-sm-4">
+
+                                        <h4>2020 Dates & price Gold</h4>
+
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo60">March</button>
+  <div id="demo60" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td><a href="#"> Jan 25</a></td>
+                                                        <td>$2000</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo61">April</button>
+  <div id="demo61" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo62">May</button>
+  <div id="demo62" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo63">June</button>
+  <div id="demo63" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo64">July</button>
+  <div id="demo64" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo65">August</button>
+  <div id="demo65" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo66">September</button>
+  <div id="demo66" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo67">October</button>
+  <div id="demo67" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo68">November</button>
+  <div id="demo68" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo69">December</button>
+  <div id="demo69" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+
+
+</div>
+     </div>
+                                    </div>
+
+
+
   @elseif($id == 48)
 
-  48
-@endif
+    <div class="container">
+         <div class="row">
+      <div class="col-sm-4">
+  <h4  >2020 Dates & price Dimond</h4>
 
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo70">March</button>
+  <div id="demo70" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td><a href="#"> Mar 25</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo71">April</button>
+  <div id="demo71" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo72">May</button>
+  <div id="demo72" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> May 6</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 13</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 20</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> May 27</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo73">June</button>
+  <div id="demo73" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo74">July</button>
+  <div id="demo74" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo75">August</button>
+  <div id="demo75" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo76">September</button>
+  <div id="demo76" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo77">October</button>
+  <div id="demo77" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo78">November</button>
+  <div id="demo78" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo79">December</button>
+  <div id="demo79" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 3</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 10</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 17</a></td>
+                                                        <td>$ 655</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Jun 24</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+      </div>
+
+  <div class="col-sm-4">
+
+                                        <h4>2020 Dates & price Gold</h4>
+
+
+   <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo80">March</button>
+  <div id="demo80" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td><a href="#"> Jan 25</a></td>
+                                                        <td>$2000</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo81">April</button>
+  <div id="demo81" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo82">May</button>
+  <div id="demo82" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo83">June</button>
+  <div id="demo83" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo84">July</button>
+  <div id="demo84" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo85">August</button>
+  <div id="demo85" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo86">September</button>
+  <div id="demo86" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo87">October</button>
+  <div id="demo87" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+<div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo88">November</button>
+  <div id="demo88" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+  </div>
+  </div>
+
+  <div class="row">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo89">December</button>
+  <div id="demo89" class="collapse">
+     <table class="table table-striped table-condensed dates-tabel">
+                                                <thead>
+
+                                                    <tr>
+                                                        <th>Dates</th>
+                                                        <th>Land Only</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 1</a> <span> (Sold Out)</span></td>
+                                                        <td>$ 655*</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 8</a></td>
+                                                        <td>$ 917</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 15</a></td>
+                                                        <td>$ 917</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 22</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td><a href="#"> Apr 29</a></td>
+                                                        <td>$ 655</td>
+
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+  </div>
+  </div>
+</div>
+     </div>                              </div>
+@endif
                           </div>
                                 </div>
                             </div>
 
-                            
+
 
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
                         </div>
                     </div>
-                   
-                       
-
-          
-
-
                     <div>
                         <div class="dir-rat">
                             <div class="dir-rat-inn dir-rat-title">
@@ -1217,15 +3245,15 @@ tr:nth-child(even) {
                                         <input type="submit" value="SUBMIT" class="link-btn"> </div>
                                 </form>
                             </div>
-                       
+
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3 tour_r">
 
                 </div>
-              
-                
+
+
 
 
                 <div class="example">
@@ -1269,9 +3297,9 @@ tr:nth-child(even) {
 
 
 @foreach($packages as $pack)
-        
 
-                    <div class="tour_rela_1"> 
+
+                    <div class="tour_rela_1">
                <img src="{{asset('storage/tmp/uploads/large').'/'.$package['package_images'][0]->file_path}}" alt="" />
                         <h4>{!! $pack['name'] !!}</h4>
                         <p> {!! str_limit($package->inclusion ,100 )!!}</p>
